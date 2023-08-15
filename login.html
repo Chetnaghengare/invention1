@@ -1,0 +1,205 @@
+<!-- ********login -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    *{
+        background-color:#4a4646;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      max-width: 400px;
+      margin:0 auto;
+      /* background-color: #fff; */
+    }
+    /* .login-container h2{
+      background-color: #fff;
+    } */
+    input[type="text"], input[type="password"], input[type="captcha"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .captcha-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .captcha {
+      font-size: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+    }
+    .button a{
+      color: #ffff;
+      background-color: #007bff;
+    }
+    .login-container{ color: #fff;
+       position : center;
+       
+
+    }
+    .section button a{
+    height: 50px;
+    font-size: x-large;
+    background-color: #007bff;
+    color: #fff;
+    /* border-radius: 0%; */
+  }
+  *{
+   margin: 0;
+   padding: 0;
+   /* padding-top:2px; */
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+body {
+   background-color:#4a4646;
+   color: white;
+   background-image: image();
+ }
+ 
+ #header {
+   width:100% ;
+   height: 100vh;
+ }
+
+ .container{
+   padding: 10px 10%;
+ }
+ .container h1{
+  font-size: 60px;
+ }
+ .container h1 span{
+  color: #de9df0;
+  
+ }
+ nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ .logo{
+   width: 140px;
+   border-radius: 20px;
+ }
+ nav ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+ }
+ nav ul li a{
+   color: #ffff;
+   text-decoration: none;
+   position: relative;
+   font-size: 30px;
+
+ }
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #de9df0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+ }
+ nav ul li a:hover::after{
+   width:100%;
+   color: #de9df0;
+
+ }
+
+ .row h2{
+  margin-top: 70px;
+ }
+  </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>Seva</span>Connect</h1>
+               
+                <ul>
+                    <li><a href="home.html">Home</a></li></li>
+                    
+                    <li><a href="service.html">Services</a></li></li>
+                    <li><a href="login.html">Login</a></li></li>
+                  </ul>
+            </nav>
+            
+        </div>
+    
+  <div class="login-container">
+    <h2 >Login</h2>
+    <form>Enter email
+      <input class="login-container" type="text" placeholder="Email Address" required>
+      Enter password <input class="login-container" type="password" placeholder="Password" required>
+      <div class="captcha-container">
+        <div class="login-container">ABC123</div> <!-- Replace with a dynamic captcha generator -->
+        <input class="login-container" type="text" placeholder="Enter Captcha" required>
+      </div>
+      <!-- <div class="button-container">
+        <button type="button" class="button">Login</button>
+      </div> -->
+      <div class="section">
+        <!-- <a href="index.html" target="_self"> </a> -->
+        <!-- <button onclick="document.location='index.html' " ><b>Register</b></button> -->
+        <button type="button" class="button"><a href="index.html">Login</a></button>
+      </div>
+      <h3>Yet not registered?</h3>
+      <h4>Do register</h4>
+      <div class="buttons-container">
+        <button type="button" class="button"><a href="registration.html">Register as a service provider</a> </button>
+        <button type="button" class="button"><a href="user.html">Register as a customer</a></button>
+      </div>
+      
+    </form>
+  </div>
+  </div>
+</body>
+</html>
